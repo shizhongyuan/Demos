@@ -14,7 +14,7 @@ public class String07 {
 
     private static void ted() {         // 插入
         StringBuffer x = new StringBuffer("xiaoshu");       // 要打印的数  StringBuffer固定代码
-        x.append("haha");           // 要打印的数append固定代码
+        x.append("haha");           // 要打印的数append 固定代码
         x.insert(4,"shi");          // 任意地方插入insert固定代码
         System.out.println(x);
     }

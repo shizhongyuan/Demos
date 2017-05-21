@@ -16,7 +16,7 @@ public class java01 {
         Iterator<Zhu01> it = p.iterator();
         while (it.hasNext()){
             Zhu01 x = it.next();
-            System.out.println(x);
+            System.out.println(x.getAge()+x.getNaem());
         }
     }
 }
