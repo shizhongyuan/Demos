@@ -9,7 +9,7 @@ public class String01 {
     }
     public static void String01(){
         char [] arr={'a','b','c','x','e'};
-        String q = new String(arr,0,3);   //  跟对象不同就是String   对象的是new函数名（String01）
+        String q = new String(arr,0,4);   //  跟对象不同就是String   对象的是new函数名（String01）
         System.out.println("q="+q);
     }
 }

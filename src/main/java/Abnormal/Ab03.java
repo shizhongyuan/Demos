@@ -15,7 +15,7 @@ class Pyc{
 
     public static void main(String[] args){
         try {
-            Pyc pyc = new Pyc(106764628);
+            Pyc pyc = new Pyc(1067164628);
         }
          catch (Abnormal.yclei yclei) {
             yclei.printStackTrace();

@@ -11,13 +11,13 @@ public class Fz {
             {
                 System.out.println("出错");
             }
-            else
-                ags=c;
-            System.out.println("======"+c);
+            else {
+                ags = c;
+                System.out.println("======" + c);
+            }
         }
 }
-class zhu
-{
+class zhu {
     public static void main(String[] args)
     {
         Fz p = new Fz();

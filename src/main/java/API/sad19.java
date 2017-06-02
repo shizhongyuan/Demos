@@ -16,7 +16,7 @@ public class sad19 {
                     System.out.print(arr[x][y]+",");
                 }
                 else
-                    System.out.print(arr[x][y]);
+                    System.out.print(arr[x][y]+",");
             }
         }
     }

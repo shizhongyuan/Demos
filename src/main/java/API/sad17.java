@@ -10,9 +10,9 @@ public class sad17 {
         System.out.println(xixi);
         paix(arr);
     }
-    static int xiao(int []arr,int xx){          // 数的查找
+    public static int xiao(int[] arr, int i){          // 数的查找
         for (int x=0;x<arr.length;x++){
-            if (arr[x]==xx)
+            if (arr[x]==i)
                 return x;
         }
         return -1;
