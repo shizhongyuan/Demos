@@ -1,10 +1,7 @@
 package GUI;
 
 import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
+import java.awt.event.*;
 
 /**
  * Created by Administrator on 2017/6/2 0002.
@@ -26,7 +23,7 @@ public class Gui_02 {
         xiao();
         b = new Button("按钮");     // 创建按钮
         f.add(b);                       // 使用按钮
-        xiao_01();
+//        xiao_01();
         f.setVisible(true);             // 将按钮添加到窗口中
 
     }
@@ -48,7 +45,18 @@ public class Gui_02 {
     }
 
 
-    private void xiao() {
+    private void xiao() {           //  键盘输入到文本框
+        tf.addKeyListener(new KeyAdapter() {
+            public void keyPressed(KeyEvent e) {
+                char keyChar = e.getKeyChar();
+                if (!(keyChar>=KeyEvent.VK_0 && keyChar<=KeyEvent.VK_9)){       // 数字必须在0-9中
+                    System.out.println("输入必需为数字");          // 如果输入不是0-9则控制台输出 该文字
+                    e.consume();                        //  如果在文本框中输入不在规定里面则文本框不显示在文本框
+            }
+            }
+        });
+
+
         f.addWindowListener(new WindowAdapter() {             // 固定代码
             public void windowClosing(WindowEvent e) {       // 固定代码
                 System.exit(0);        // 如果给用户点叉就退出则用这个
