@@ -1,4 +1,4 @@
-package GUI;
+package Homework.GUI;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;

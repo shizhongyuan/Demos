@@ -13,7 +13,7 @@ public class Theclient_3 {
     public static void main(String[] args) throws IOException {
         // 上次相片到到服务端          客户端
         // 创建Socket对象
-        Socket s = new Socket("192.168.1.102",10005);
+        Socket s = new Socket("127.0.0.1",10005);
         // 读取服务端要上传的相片
         FileInputStream fs = new FileInputStream("E:\\java_io\\123.jpg");
         //获取Socket对象将数据发给服务端

@@ -12,7 +12,7 @@ public class Theclient_1 {
     public static void main(String[] args) throws IOException {
         // 客户端发送数据到服务台
         // 创建客户端Socket服务
-        Socket socket = new Socket("192.168.1.102",10001);
+        Socket socket = new Socket("127.0.0.1",10001);
         // 获取 Socket流中的输出流
         OutputStream os = socket.getOutputStream();
         //使用输出流将指定数据写出去

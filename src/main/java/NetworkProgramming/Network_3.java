@@ -14,16 +14,17 @@ public class Network_3 {
         System.out.println("接收端启动---");
         // 使用DatagramSocket对象
         DatagramSocket ds = new DatagramSocket(10000);
+        System.out.println("======");
         // 创建数据包
         byte[] y = new byte[1024];
         DatagramPacket dp = new DatagramPacket(y,y.length);
         // 将数据储存到数据包中
         ds.receive(dp);
         // 通过数据包解析数据 比如 地址 端口 数据内容
-        String ha = ds.getInetAddress().getHostAddress();
+      //  String ha = ds.getInetAddress().getHostAddress();
         int gp = ds.getPort();
         String s = new String(dp.getData(),0,dp.getLength());
-        System.out.println(ha+":"+gp+":"+s);
+        System.out.println(":"+gp+":"+s);
         // 关闭资源
         ds.close();
     }
